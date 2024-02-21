@@ -24,7 +24,7 @@ For x86_64 machines:
 ```bash
 docker run -v $LOCAL_DIR:$CONTAINER_DIR -it uvr:latest bash
 ```
-For amd machines: 
+For arm machines: 
 ```bash 
 docker run --platform linux/amd64 -v $LOCAL_DIR:$CONTAINER_DIR -it uvr:latest bash
 ```
