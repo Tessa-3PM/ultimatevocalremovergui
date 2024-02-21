@@ -13,7 +13,7 @@ If you are running a x86_64 machine, all you need is:
 ```bash 
 docker build -t uvr .
 ```
-If you are running and amd machine, such as an M1/M2 mac, you will need to specify the platform: 
+If you are running an arm machine, such as an M1/M2 mac, you will need to specify the platform: 
 ```bash
 docker build --platform=linux/amd64 -t uvr .
 ```
