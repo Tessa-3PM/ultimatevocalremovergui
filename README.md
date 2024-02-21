@@ -30,7 +30,7 @@ docker run --platform linux/amd64 -v $LOCAL_DIR:$CONTAINER_DIR -it uvr:latest ba
 ```
 
 ## CLI Development 
-The beginnings of the cli are located in `cli.py` on the branch `tk_nogui`. It's currently hard-coded to use an MDX model and a single input file. 
+The beginnings of the cli are located in `cli.py`. It's currently hard-coded to use an MDX model and a single input file. 
 
 I have copied and modified code from `UVR.py` to validate the input file and run the model on it. 
 However, the `ModelData` class implemented in `UVR.py` has many references to the `MainWindow` class, which is a tkinter class. This is causing issues when trying to run the model without the GUI. All references to `root` in the `ModelData` class need to be converted to something that doesn't require a tkinter window. I've pulled out ModelData into a separate file, `model_data.py`, but haven't made many edits yet. 
