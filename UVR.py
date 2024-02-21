@@ -3313,7 +3313,7 @@ class MainWindow(TkinterDnD.Tk if is_dnd_compatible else tk.Tk):
         self.help_hints(is_testing_audio_Option, text=IS_TESTING_AUDIO_HELP)
         
         is_add_model_name_Option = ttk.Checkbutton(settings_menu_format_Frame, text=MODEL_TEST_MODE_TEXT, width=GEN_SETTINGS_WIDTH, variable=self.is_add_model_name_var) 
-        is_add_model_name_Option.grid()
+        is_add_modelxname_Option.grid()
         self.help_hints(is_add_model_name_Option, text=IS_MODEL_TESTING_AUDIO_HELP)
         
         is_create_model_folder_Option = ttk.Checkbutton(settings_menu_format_Frame, text=GENERATE_MODEL_FOLDER_TEXT, width=GEN_SETTINGS_WIDTH, variable=self.is_create_model_folder_var) 

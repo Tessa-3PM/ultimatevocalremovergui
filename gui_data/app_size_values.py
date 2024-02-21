@@ -19,7 +19,7 @@ def scale_values(value):
     else:
         return value
 
-SCREEN_HIGHT, SCREEN_WIDTH = get_screen_height()
+SCREEN_HIGHT, SCREEN_WIDTH = 1, 1
 SCALE_WIN_SIZE = 1920
 
 SCREEN_SIZE_VALUES = {
